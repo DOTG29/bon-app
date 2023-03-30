@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid #bfc0c0;
+    display: flex;
+}
+
+/*header partie logo*/
+
+.div_logo {
+    width: 50%;
+    height: 100%;
+    background-color: #4f5d75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_logo h1 {
+    color: white;
+    font-size: 25px;
+    position: relative;
+}
+
+.div_logo h1::before {
+    content: '"';
+    color: #ef8354;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+}
+
+.div_logo h1::after {
+    content: '"';
+    color: #ef8354;
+    position: absolute;
+    top: -10px;
+    right: -20px;
+}
+
+/*header partie nav*/
+
+.div_nav {
+    width: 50%;
+    height: 100%;
+    background-color: #4f5d75;
+    display: flex;
+}
+
+.div_nav ul {
+    margin-top: 20px;
+}
+
+.div_nav li {
+    list-style: none;
+    color: white;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.div_nav button {
+    width: 50px;
+    height: 20px;
+    margin-left: 40px;
+    margin-top: 40px;
+    background-color: #2d3142;
+    color: white;
+}
+
+/*main partie abonnements*/
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 80%;
+    text-align: center;
+}
+
+section h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+thead, tfoot {
+    background-color: #4f5d75;
+    color: white;
+}
+
+/*main partie les plats a la carte*/
+
+section article {
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+article img {
+    border-radius: 15%;
+    width: 80px;
+    height:80px;
+    object-fit: cover;
+    float: left;
+}
+
+.art_gris {
+    background-color: #bfc0c0;
+}
+
+/*main partie paralax*/
+
+.paralax {
+    width: 80%;
+    height: 80px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-image: url(img/img-06.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*main partie blog*/
+
+.container_blog article {
+    width: 100%;
+    height: 230px;
+    margin-top: 20px;
+    box-shadow: -3px 1px 39px 8px rgba(0,0,0,0.53);
+}
+
+.container_blog p {
+    padding: 10px;
+}
+
+.container_blog img {
+    width: 100%;
+    height: 80px;
+    border-radius: 0;
+}
+
+/*footer partie form*/
