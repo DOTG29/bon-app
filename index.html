@@ -15,12 +15,12 @@
       <div class="div_nav">
         <nav>
           <ul>
-            <li>PLATS</li>
-            <li>BLOG</li>
-            <li>CONTACT</li>
+            <li><a href="#plats">PLATS</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
-        <button>DARK</button>
+        <button id="dark">DARK</button>
       </div>
     </header>
     <main>
@@ -51,7 +51,7 @@
         </table>
       </section>
       <section>
-        <h2>LES PLATS A LA CARTE</h2>
+        <h2 id="plats">LES PLATS A LA CARTE</h2>
         <article class="art_gris">
           <img src="img/img-01.jpg" alt="photo">
           <h3>UN SUPER TITRE</h3>
@@ -82,7 +82,7 @@
       <div class="paralax"></div>
 
       <section class="container_blog">
-        <h2>BLOG</h2>
+        <h2 id="blog">BLOG</h2>
         <article>
           <img src="img/img-07.jpg" alt="photo">
           <h3>UN SUPER TITRE</h3>
@@ -119,8 +119,61 @@
     </main>
     <footer>
       <form action="#">
+        <h2 id="contact">FORMULAIRE DE CONTACT</h2>
+        <p>pour plus de details vous pouvez consultez notre site<a href="https://www.edenschool.fr/"> ici</a></p>
+        <h3>INFORMATION DE CONTACT</h3>
 
+        <fieldset><legend>Quel est votre age ?</legend>
+          <div>
+            <input type="radio" name="name" >
+            <label for="age">12-14</label>
+          </div>
+          <div>
+            <input type="radio" name="name" >
+            <label for="age">15-17</label>
+          </div>
+          <div>
+            <input type="radio" name="name" class="age" >
+            <label for="age">18-19</label>
+          </div>
+        </fieldset>
+         <div class="nom">
+          <label for="nom">nom:</label>
+          <input type="text" name="nom">
+        </div>
+        <div class="mail">
+          <label for="mail">mail:</label>
+          <input type="email" name="nom">
+        </div>
+        <h3>VOTRE JEUX PREFERE</h3>
+        <div class="console">
+          <label for="jeu">Choisissez une console :</label>
+          <select name="jeu" >
+            <option value="">--Choisissez une console--</option>
+            <option value="pc">PC</option>
+            <option value="xbox">XBOX</option>
+          </select>
+        </div>
+        <div>
+          <div class="jeux">
+            <label for="jeu">Choisissez un jeu :</label> 
+            <select name="jeu" >
+              <option value="">--Choisissez un jeu--</option>
+              <option value="fortnite">FORTNITE</option>
+              <option value="mincraft">MINCRAFT</option>
+            </select>
+        </div>
+        <label for="story"><h3>VOTRE MASSAGE:</h3></label>
+        <textarea id="story" name="story" rows="5" cols="33"></textarea>
+        <div class="mot_de_pass">
+          <label for="prenom">cryptage du massage :</label>
+          <input type="password" name="name">
+        </div>
+        <div class="valide">
+          <button>Envoyer votre message</button>
+        </div>
       </form>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

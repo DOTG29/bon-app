@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=PT+Sans&family=Righteous&family=Roboto:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -32,6 +33,7 @@ header {
     color: white;
     font-size: 25px;
     position: relative;
+    font-family: 'Righteous', sans-serif;
 }
 
 .div_logo h1::before {
@@ -59,6 +61,11 @@ header {
     display: flex;
 }
 
+.div_nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .div_nav ul {
     margin-top: 20px;
 }
@@ -73,10 +80,12 @@ header {
 .div_nav button {
     width: 50px;
     height: 20px;
-    margin-left: 40px;
+    margin-left: 14%;
     margin-top: 40px;
     background-color: #2d3142;
     color: white;
+    border-radius: 5px;
+    padding: 2px;
 }
 
 /*main partie abonnements*/
@@ -91,6 +100,9 @@ main {
 section {
     width: 80%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section h2 {
@@ -107,6 +119,10 @@ thead, tfoot {
     color: white;
 }
 
+th, td {
+    padding: 8px;
+}
+
 /*main partie les plats a la carte*/
 
 section article {
@@ -114,6 +130,10 @@ section article {
     height: 80px;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+section article h3 {
+    padding-top: 10px;
 }
 
 article img {
@@ -161,3 +181,122 @@ article img {
 }
 
 /*footer partie form*/
+
+footer {
+    width: 100%;
+    background-color: #4f5d75;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+form {
+    text-align: center;
+}
+
+footer h2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    color: white;
+    margin-top: 20px;
+}
+
+footer h3 {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+footer fieldset {
+    width: 100%;
+    border: 1px solid white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer fieldset legend {
+    margin-left: -50px;
+}
+
+footer fieldset div {
+    margin: 5px 5% 5px 10%;
+}
+
+label {
+    color: white;
+}
+
+.nom {
+    margin-top: 20px;
+}
+
+.nom input {
+    border-radius: 5px;
+}
+
+.mail {
+    margin-top: 20px;
+}
+
+.mail input {
+    border-radius: 5px;
+}
+
+.console {
+    margin-top: 20px;
+}
+
+.console select {
+    border-radius: 5px;
+}
+
+.jeux {
+    margin-top: 20px;
+}
+
+.jeux select {
+    border-radius: 5px;
+}
+
+textarea {
+    margin-top: 20px;
+}
+
+.mot_de_pass {
+    margin-top: 20px;
+}
+
+.valide {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.valide button {
+    background-color: #2d3142;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+@media screen and (min-width: 680px) {
+    .div_nav ul {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div_nav li {
+        padding: 20px;
+    }
+}
