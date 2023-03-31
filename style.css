@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=PT+Sans&family=Righteous&family=Roboto:wght@300&display=swap');
 
+:root {
+    --noir: #000000;
+    --gris_foncer: #2d3142;
+    --gris: #4F5D75;
+    --gris_clair: #bfc0c0;
+    --blanc: #FFFFFF;
+    --blanc_2: #EAEBEB;
+    --orange: #EF8354;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +18,13 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 header {
     width: 100%;
     height: 110px;
-    border-bottom: 1px solid #bfc0c0;
+    border-bottom: 1px solid var(--gris_clair);
     display: flex;
 }
 
@@ -23,14 +33,14 @@ header {
 .div_logo {
     width: 50%;
     height: 100%;
-    background-color: #4f5d75;
+    background-color: var(--gris);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .div_logo h1 {
-    color: white;
+    color: var(--blanc);
     font-size: 25px;
     position: relative;
     font-family: 'Righteous', sans-serif;
@@ -38,7 +48,7 @@ header {
 
 .div_logo h1::before {
     content: '"';
-    color: #ef8354;
+    color: var(--orange);
     position: absolute;
     top: -10px;
     left: -20px;
@@ -46,7 +56,7 @@ header {
 
 .div_logo h1::after {
     content: '"';
-    color: #ef8354;
+    color: var(--orange);
     position: absolute;
     top: -10px;
     right: -20px;
@@ -57,13 +67,13 @@ header {
 .div_nav {
     width: 50%;
     height: 100%;
-    background-color: #4f5d75;
+    background-color: var(--gris);
     display: flex;
 }
 
 .div_nav a {
     text-decoration: none;
-    color: #fff;
+    color: var(--blanc);
 }
 
 .div_nav ul {
@@ -72,7 +82,7 @@ header {
 
 .div_nav li {
     list-style: none;
-    color: white;
+    color: var(--blanc);
     margin-top: 12px;
     font-size: 12px;
 }
@@ -82,8 +92,8 @@ header {
     height: 20px;
     margin-left: 14%;
     margin-top: 40px;
-    background-color: #2d3142;
-    color: white;
+    background-color: var(--gris_foncer);
+    color: var(--blanc);
     border-radius: 5px;
     padding: 2px;
 }
@@ -111,12 +121,12 @@ section h2 {
 }
 
 table, td {
-    border: 1px solid black;
+    border: 1px solid var(--noir);
 }
 
 thead, tfoot {
-    background-color: #4f5d75;
-    color: white;
+    background-color: var(--gris);
+    color: var(--blanc);
 }
 
 th, td {
@@ -145,7 +155,7 @@ article img {
 }
 
 .art_gris {
-    background-color: #bfc0c0;
+    background-color: var(--gris_clair);
 }
 
 /*main partie paralax*/
@@ -184,12 +194,12 @@ article img {
 
 footer {
     width: 100%;
-    background-color: #4f5d75;
+    background-color: var(--gris);
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
+    color: var(--blanc);
 }
 
 form {
@@ -197,25 +207,25 @@ form {
 }
 
 footer h2 {
-    color: white;
+    color: var(--blanc);
     font-size: 20px;
     margin-top: 20px;
 }
 
 footer p {
-    color: white;
+    color: var(--blanc);
     margin-top: 20px;
 }
 
 footer h3 {
-    color: white;
+    color: var(--blanc);
     font-size: 20px;
     margin-top: 20px;
 }
 
 footer fieldset {
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid var(--blanc);
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -231,7 +241,7 @@ footer fieldset div {
 }
 
 label {
-    color: white;
+    color: var(--blanc);
 }
 
 .nom {
@@ -280,13 +290,11 @@ textarea {
 }
 
 .valide button {
-    background-color: #2d3142;
-    color: white;
+    background-color: var(--gris_foncer);
+    color: var(--blanc);
     border-radius: 5px;
     padding: 5px;
 }
-
-
 
 @media screen and (min-width: 680px) {
     .div_nav ul {
