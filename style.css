@@ -307,4 +307,16 @@ textarea {
     .div_nav li {
         padding: 20px;
     }
+
+    .container_blog div {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .container_blog article {
+        width: 40%;
+        margin: 5% 5% 0 5%;
+        height: 260px;
+    }
 }

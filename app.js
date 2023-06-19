@@ -8,5 +8,5 @@ let dark = document.getElementById("dark");
 
 dark.addEventListener('click', () => {
     document.body.style.color = '#fff';
-    document.body.style.backgroundColor = '';
+    document.body.style.backgroundColor = 'black';
 })
